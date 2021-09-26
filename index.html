@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html id="top">
+
+<head>
+    <title>Yvonne Chan - Personal Profile</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+
+    <!-- bootstrap css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <style type="text/css">
+        ::selection {
+            background: #fed9ca;
+        }
+
+        body {
+            font-family: Lora-Regular, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1;
+            color: #747474;
+            text-align: left;
+            display: block;
+            background-color: #fff;
+            min-width: 320px;
+        }
+
+        .subheading {
+            text-transform: uppercase;
+            font-size: 21px;
+            font-weight: 700;
+            color: #9b9b9b;
+            letter-spacing: 4px;
+        }
+
+        h1 {
+            font-size: 100px;
+            font-weight: 800;
+            line-height: 1.15;
+        }
+
+        h2 {
+            display: block;
+            font-size: 2.4em;
+            margin-block-start: 0.83em;
+            margin-block-end: 0.83em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: Ubuntu-Bold, sans-serif;
+            color: #222222;
+            font-family: Ubuntu-Bold, sans-serif;
+            color: #2b2b2b;
+        }
+
+        .p-large {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            font-family: Lora-Regular, sans-serif;
+            font-weight: 400;
+            color: #747474;
+            text-align: left;
+            box-sizing: border-box;
+            margin-top: 0;
+            line-height: 1.75;
+            width: 75% !important;
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+
+        .highlight {
+            position: relative;
+            padding-left: .63rem;
+            padding-right: .63rem;
+            z-index: 1;
+        }
+
+        .highlight::before {
+            content: "";
+            background: #fed9ca;
+            position: absolute;
+            left: 0;
+            bottom: .29rem;
+            width: 100%;
+            height: 1.0rem;
+            z-index: -1;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: block;
+        }
+
+        .about-info {
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+        }
+
+        .about-info li {
+            display: flex;
+            margin-bottom: 15px;
+            text-align: -webkit-match-parent;
+        }
+
+        .about-info li span:first-child {
+            font-size: 14px;
+            font-weight: 600;
+            color: #222222;
+            width: 130px;
+        }
+
+        .pale-pink {
+            background: rgb(255, 252, 250);
+        }
+
+        /* .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: 80px;
+            max-width: 1280px;
+        } */
+
+        section {
+            width: 100%;
+        }
+
+        .section-paddingTop {
+            display: block;
+            padding-top: 54px;
+        }
+
+        #about {
+            margin-top: 7rem;
+            padding-bottom: 7em;
+        }
+
+        #resume {
+            margin-top: 5rem;
+        }
+
+        #project {
+            margin-top: 3rem;
+        }
+
+        .title .title-clone {
+            font-family: Ubuntu-Bold, sans-serif;
+            color: #fbfbfb;
+            position: absolute;
+            right: -80px;
+            bottom: 0px;
+            z-index: -1;
+            font-size: 27.25rem;
+        }
+
+        #portrait {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .col-1 {
+            flex: 0 0 60%;
+            max-width: 50%;
+        }
+
+        .col-2 {
+            flex: 0 0 40%;
+            max-width: 50%;
+        }
+
+        .col-3 {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+
+        .main-menu {
+            display: block;
+        }
+
+        #navbarTogglerDemo03 .nav-item {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: .81rem;
+            padding: 0.05rem 0.5rem;
+            line-height: 1.23;
+        }
+
+        #navbarTogglerDemo03 ul li {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            font-family: Lora-Regular, sans-serif;
+            font-weight: 400;
+            color: #747474;
+            margin-top: 0;
+            text-align: -webkit-match-parent;
+            line-height: 1.23;
+            list-style: none;
+        }
+
+        #navi li a {
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+        }
+
+        #navi li a.active {
+            color: #e4ccc0;
+            margin-left: 20px;
+            /*like insert a tab*/
+            position: relative;
+        }
+
+        /*a bullet*/
+        #navi li a.active::after {
+            position: absolute;
+            top: 50%;
+            left: -24px;
+            width: 20px;
+            height: 2px;
+            content: "";
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            background: #e4ccc0;
+        }
+
+        #verticalNav {
+            top: 180px;
+            position: -webkit-sticky;
+            position: sticky;
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            color: #777777;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.625em;
+        }
+
+        #navi li {
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        a:-webkit-any-link:focus-visible {
+            outline-offset: 1px;
+        }
+
+        a:focus,
+        a:hover {
+            text-decoration: none;
+        }
+
+        li {
+            text-align: -webkit-match-parent;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        .align-items-center {
+            align-items: center !important;
+        }
+
+        .justify-content-center {
+            justify-content: center !important;
+        }
+
+        .d-flex {
+            display: flex !important;
+        }
+
+        .pl-3,
+        .px-3 {
+            padding-left: 1rem !important;
+        }
+
+        .col,
+        .col-1,
+        .col-10,
+        .col-11,
+        .col-12,
+        .col-2,
+        .col-3,
+        .col-4,
+        .col-5,
+        .col-6,
+        .col-7,
+        .col-8,
+        .col-9,
+        .col-auto,
+        .col-lg,
+        .col-lg-1,
+        .col-lg-10,
+        .col-lg-11,
+        .col-lg-12,
+        .col-lg-2,
+        .col-lg-3,
+        .col-lg-4,
+        .col-lg-5,
+        .col-lg-6,
+        .col-lg-7,
+        .col-lg-8,
+        .col-lg-9,
+        .col-lg-auto,
+        .col-md,
+        .col-md-1,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-auto,
+        .col-sm,
+        .col-sm-1,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-auto,
+        .col-xl,
+        .col-xl-1,
+        .col-xl-10,
+        .col-xl-11,
+        .col-xl-12,
+        .col-xl-2,
+        .col-xl-3,
+        .col-xl-4,
+        .col-xl-5,
+        .col-xl-6,
+        .col-xl-7,
+        .col-xl-8,
+        .col-xl-9,
+        .col-xl-auto {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .page {
+            width: 100%;
+            /* padding-top: 54px; */
+        }
+
+        .page {
+            font-family: "Roboto", sans-serif;
+            color: #777777;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 1.625em;
+        }
+
+        .page .heading {
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .page .resume-wrap {
+            width: 100%;
+            margin-bottom: 30px;
+            background-color: rgb(255, 249, 247);
+            padding: 40px 30px;
+            border-radius: 10px;
+        }
+
+        .page .resume-wrap:hover {
+            background: #e6c4BB;
+            color: #ffffff;
+        }
+
+        .page .resume-wrap:hover h4,
+        .page .resume-wrap:hover .date {
+            color: #fff;
+        }
+
+        .page .resume-wrap:hover .icon {
+            background: #fff;
+        }
+
+        .page .resume-wrap:hover .icon .fa {
+            color: #e6c4BB;
+        }
+
+        .page .resume-wrap .date {
+            font-weight: 700;
+            font-size: 16px;
+            color: #222222;
+        }
+
+        .page .resume-wrap .position {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .page .resume-wrap h4 {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .page .resume-wrap .text {
+            width: calc(100% - 100px);
+            padding: 0 0 10px;
+        }
+
+        .page .resume-wrap .icon {
+            width: 50px;
+            height: 50px;
+            background: #eaccc0;
+            background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: #eaccc0;
+            border-radius: 50%;
+        }
+
+        .page .resume-wrap .icon span {
+            color: #fff;
+            font-size: 20px;
+        }
+
+        .fa-graduation-cap {
+            font-style: normal;
+            font-weight: normal;
+            text-transform: none;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            font-variant: normal;
+        }
+
+        .mt-5,
+        .my-5 {
+            margin-top: 3rem !important;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .about-details p {
+            width: 90%;
+            line-height: 1.7em
+        }
+
+        .site-header {
+            margin-bottom: 55px !important
+        }
+
+        #navbar_top {
+            background-color: #f7f7f7;
+        }
+
+        html {
+            /*For smooth scrolling behavior*/
+            scroll-behavior: smooth;
+        }
+
+        .progress-wrap {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .progress-wrap h5 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .progress-bar span {
+            position: absolute;
+            top: -38px;
+            right: 0;
+            font-size: 16px;
+            font-weight: 500;
+            color: #000000;
+        }
+
+        .progress {
+            height: 6px;
+            background: #e6e6e6;
+            overflow: visible;
+        }
+
+        .progress-bar {
+            background: #caa3a2;
+            position: relative;
+            font-size: 12px;
+            line-height: 1.2;
+            color: #000000;
+            font-weight: 600;
+            position: relative;
+            overflow: visible;
+            border-radius: 2px;
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+        }
+
+
+        #cv-download-btn {
+            background: #e6c4BB;
+            border-color: #e6c4BB;
+            text-transform: capitalize;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 400;
+            transition: all 0.5s;
+            border-radius: 30px;
+            padding: 13px 43px;
+
+
+            display: inline-block;
+            /* padding: 1em 2em; */
+            border: none;
+            text-align: center;
+            color: white;
+            background: red;
+            /* default color */
+
+            /* "to left" / "to right" - affects initial color */
+            background: linear-gradient(to left, #e6c4BB 50%, #888888 50%) right;
+            background-size: 200%;
+            transition: .4s linear;
+        }
+
+        #cv-download-btn:hover {
+            background-position: left;
+        }
+
+        #cv-download-btn:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .single-work:hover .overlay {
+            top: 20px;
+            background: #727272;
+            left: 20px;
+        }
+
+        .single-work .overlay {
+            position: absolute;
+            left: 0;
+            opacity: 0.7;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .single-work:hover .short-info {
+            bottom: 24px;
+            left: 60px;
+            opacity: 0.8;
+            visibility: visible;
+        }
+
+        .single-work .short-info {
+            position: absolute;
+            bottom: 44px;
+            font-size: 14px;
+            left: 80px;
+            color: #ffffff;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .single-work {
+            margin-bottom: 30px;
+        }
+
+        .a,
+        :after,
+        :before,
+        .transition {
+            -webkit-transition: all 0.3s ease 0s;
+            -moz-transition: all 0.3s ease 0s;
+            -ms-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+        }
+
+        .short-info h4 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        img {
+            width: 400px;
+            height: auto;
+            vertical-align: middle;
+            /* border-style: none; */
+        }
+
+        section {
+            display: inline-block;
+        }
+
+        #barBtn1,
+        #barBtn2 {
+            outline: none;
+            border: none;
+            background: transparent;
+        }
+
+        #menu {
+            display: none;
+        }
+
+        #bar2 {
+            display: none;
+        }
+
+        .fa-bars {
+            color: #929191;
+        }
+
+        .position-relative {
+            position: relative !important;
+        }
+
+        .bar-Icon {
+            padding-right: 5%;
+        }
+
+        #navbar-container {
+            width: 100%;
+            background-color: #f7f7f7;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loading" style="position: static; text-align: right; margin: 8px 0px; font-size: 14px;">
+    </div>
+
+    <header id="header" class="site-header">
+        <div class="main-menu">
+            <!-- Navigation bar for extra large -->
+            <section id="topNav" class="d-none d-lg-block">
+                <nav id="navbar_top" style="width: 100%;" class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <div class="navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="#top"> Home </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#about"> About </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#resume"> Resume </a></li>
+                                <li class="nav-item"><a class="nav-link" href="#project"> Projects </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <!-- Navigation bar for Large -->
+            <section id="topNav" class="d-block d-lg-none">
+                <div id="navbar-container">
+                    <div class="bar-Icon">
+                        <div id="bar1" class="text-right">
+                            <button id="barBtn1" onclick="openMenu()"><i class="fa fa-bars"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div id="bar2" class="text-right">
+                            <button id="barBtn2" onclick="closeMenu()"><i class="fa fa-bars"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <nav id="menu" class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                            <div class="navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                    <li class="nav-item"><a class="nav-link" href="#top"> Home </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#about"> About </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#resume"> Resume </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#project"> Projects </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+            </section>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <section id="home" class="page-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6" style="margin-bottom: 200px;">
+                        <span class="subheading">Hey! I am</span>
+                        <div class="title">
+                            <h1>Yvonne Chan</h1>
+                            <div class="title-clone">Yvonne</div>
+                        </div>
+                        <p class="p-large">I’m a IT developer and here is my portfolio. Have a
+                            look.</p>
+                    </div>
+                    <div class="col-6 d-none d-lg-block">
+                        <!-- <img src="https://store.adveits.com/project/oxer/vue-js/demo/assets/img/demo/01_img.jpg"
+                            id="portrait"></img> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-area section-paddingTop page-section pale-pink">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-block"></div>
+                    <div class="col-lg-7 col-md-12">
+                        <div class="about-details">
+                            <h2>About <span class="highlight">Me</span></h2>
+                            <p>Hello, I'm Yvonne. I’m a IT Developer who is passionate about
+                                Creating something People can interact with, use, and work with. Check out my resume
+                                below to know me more!</p>
+                            <ul class="about-info">
+                                <li><span>Full name:</span> <span>Chan Ka Wai</span></li>
+                                <li><span>Year of birth:</span> <span>1999</span></li>
+                                <li><span>Address:</span> <span>Tuen Mun, Hong Kong</span></li>
+                                <li><span>Email:</span> <span>chankawai138@gmail.com</span></li>
+                            </ul>
+                        </div>
+
+                        <a id="downloadLink" href="D:/MyWeb/Yvonne%20Chan%20-%20Resume.pdf" target="_blank" 
+                        type="application/octet-stream" download="Yvonne Chan - Resume">
+                            <button id="cv-download-btn" type="button" class="btn btn-primary mt-5">
+                                <span> Download Cv</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="resume" class="resume-area section-paddingTop page-section">
+            <div class="container">
+                <h2>My <span class="highlight">Resume</span></h2>
+                <div class="row">
+                    <!-- <div class="col-lg-3"> -->
+                    <div id="verticalNav" class="d-none d-lg-block"
+                        style="height: 134.82px; width: 92.51px; margin-right: 170px; margin-left: 20px;">
+                        <nav id="navi" class="nav flex-column">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page-1">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page-2">Experience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#page-3">Skills</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="col-lg-9 col-md-12"> -->
+                    <div style="width:825px; margin-left: 15px; margin-right: 15px;">
+                        <div id="page-1" class="page one resume-section">
+                            <h3 class="heading">Education</h3>
+                            <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="text pl-3"><span class="date">2017 - 2021</span>
+                                    <h4>Bachelor in Computer Science</h4> <span class="position">Hong Kong Baptist
+                                        University</span>
+                                    <p>
+                                        As a computer science graduate,
+                                        I have acquired advanced IT knowledge and programming skills, and I wish to
+                                        pursue my career in the IT field.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="page-2" style="padding-top: 50px;" class="page two resume-section">
+                            <h3 class="heading">Experience</h3>
+                            <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="text pl-3"><span class="date">Oct 2020 – Jan 2021 (3 months)</span>
+                                    <h4>Part-time Student IT Helper</h4> <span class="position">Hong Kong Baptist
+                                        Hospital</span>
+                                    <p>
+                                        I was mainly responsible for developing java applications. I also assisted in
+                                        carrying system tests and conducting user training on system usage.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="text pl-3"><span class="date">Jun 2020 – Aug 2020 (2 months)</span>
+                                    <h4>IT Intern</h4><span class="position">Invisible Fun Studio Limited</span>
+                                    <p>
+                                        I experienced the Raspberry Pi environment and enriched my learning experience
+                                        on the current web trend. I also assisted in enhancing web-based platforms and
+                                        conducting data analysis. These experiences have equipped me with a strong sense
+                                        for IT work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="resume-wrap transition d-flex">
+                                <div class="icon d-flex align-items-center justify-content-center">
+                                    <span><i class="fa fa-briefcase" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="text pl-3"><span class="date">Oct 2019 – Mar 2020 (6 months)</span>
+                                    <h4>Part-time IT Intern</h4> <span class="position">Hospital Authority</span>
+                                    <p>
+                                        My duties included providing on-site support service for clinical system roll
+                                        out, which allows me to develop my technical consulting skills. I also helped to
+                                        design and create an internal web page, which has sharpened my problem-solving
+                                        skills.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="page-3" style="padding-top: 50px;" class="page three resume-section">
+                            <h3 class="heading">Skills</h3>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>Node.js</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:70%"><span>70%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>Java</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:85%"><span>85%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>HTML5 & CSS3</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:95%"><span>95%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>React.js</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:60%"><span>60%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>JavaScript</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:70%"><span>70%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>Python</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:65%"><span>65%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>Tableau</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:90%"><span>90%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress-wrap">
+                                        <h5>SQL</h5>
+                                        <div class="progress">
+                                            <div class="progress-bar" style="width:95%"><span>95%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                </div>
+            </div>
+        </section>
+
+        <section id="project" class="project-area section-paddingTop page-section pale-pink">
+            <h2 style="text-align: center;">My <span class="highlight">Projects</span></h2>
+            <div class="container">
+                <div class="row grid">
+                    <div class="col-lg-4 col-md-6 col-sm-12" id="div01">
+                        <div class="single-work col-lg-12 d-flex justify-content-center" id="proj01">
+                            <div class="position-relative">
+                                <img src="https://d1ngglk168riv7.cloudfront.net/n/wp-content/uploads/2020/10/04182006/Main-Picture-scaled.jpg"
+                                    class="img-fluid">
+                                <a href="https://github.com/chankawai1130/CourseManagementSystem"
+                                    class="overlay transition" style="position: absolute;"></a>
+                                <div class="short-info transition">
+                                    <h4>Console App</h4>
+                                    <div class="workplace">Course Management System</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-work col-lg-12 d-flex justify-content-center" id="proj02">
+                            <div class="position-relative">
+                                <img src="https://hrmcdn-13a1c.kxcdn.com/images/hr-sg/content-images/priya-june-2020-patrick-tay-work-from-home-lead-istock.jpg"
+                                    class="img-fluid">
+                                <a href="https://github.com/chankawai1130/RealEstateRentalSystem-MobileApp"
+                                    class="overlay transition"></a>
+                                <div class="short-info transition">
+                                    <h4>Mobile App</h4>
+                                    <div class="workplace">Real Estate Mobile App</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" id="div02">
+                        <div class="single-work col-lg-12 d-flex justify-content-center" id="proj03">
+                            <div class="position-relative">
+                                <img src="https://fr8wff00-a.akamaihd.net/philippines/wp-content/uploads/2021/05/Work-From-Home-Jobs-5.png"
+                                    class="img-fluid">
+                                <a href="https://github.com/chankawai1130/SudokuChecker" class="overlay transition"></a>
+                                <div class="short-info transition">
+                                    <h4>Console App</h4>
+                                    <div class="workplace">Sudoku Checker</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-work col-lg-12 d-flex justify-content-center" id="proj04">
+                            <div class="position-relative">
+                                <img src="http://www.gulftoday.ae/-/media/gulf-today/images/articles/news/2021/2/6/officework-wamphoto.ashx?h=450&w=750&hash=6216A044D945F48FAF1D434ED1536313"
+                                    class="img-fluid">
+                                <a href="https://github.com/chankawai1130/RealEstateRentalSystem-WebApp"
+                                    class="overlay transition"></a>
+                                <div class="short-info transition">
+                                    <h4>Web App</h4>
+                                    <div class="workplace">Real Estate Rental System</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12" id="div03">
+                        <div class="single-work col-lg-12 d-flex justify-content-center" id="proj05">
+                            <div class="position-relative">
+                                <img src="https://images.unsplash.com/photo-1587301669187-732ea66e7617?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fHdvcmslMjBmcm9tJTIwaG9tZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                                    class="img-fluid">
+                                <a href="https://github.com/chankawai1130/FinalYearProject"
+                                    class="overlay transition"></a>
+                                <div class="short-info transition">
+                                    <h4>Web App</h4>
+                                    <div class="workplace">University Student Admission System</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                document.getElementById('navbar_top').classList.add('fixed-top');
+                // add padding top to show content behind navbar
+                navbar_height = document.querySelector('.navbar').offsetHeight;
+                document.body.style.paddingTop = navbar_height + 'px';
+            } else {
+                document.getElementById('navbar_top').classList.remove('fixed-top');
+                // remove padding top from body
+                document.body.style.paddingTop = '0';
+            }
+        });
+    });
+
+    /* Code for changing active 
+    link on clicking */
+    var btns =
+        $(".topNav .navbar-nav .nav-link");
+
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click",
+            function () {
+                var current = document
+                    .getElementsByClassName("active");
+
+                current[0].className = current[0]
+                    .className.replace(" active", "");
+
+                this.className += " active";
+            });
+    }
+
+    /* Code for changing active 
+    link on Scrolling */
+    $(window).scroll(function () {
+        var distance = $(window).scrollTop();
+        $('.page-section').each(function (i) {
+
+            if ($(this).position().top
+                <= distance + 250) {
+
+                $('.navbar-nav a.active')
+                    .removeClass('active');
+
+                $('.navbar-nav a').eq(i)
+                    .addClass('active');
+            }
+        });
+    }).scroll();
+</script>
+
+
+<script>
+    var naviBtns =
+        $("#verticalNav .nav .nav-link");
+
+    for (var i = 0; i < naviBtns.length; i++) {
+        naviBtns[i].addEventListener("click",
+            function () {
+                var current = document
+                    .getElementsByClassName("active");
+
+                current[0].className = current[0]
+                    .className.replace(" active", "");
+
+                this.className += " active";
+            });
+    }
+
+    /* Code for changing active 
+    link on Scrolling */
+    $(window).scroll(function () {
+        var dist = $(window).scrollTop();
+        $('.resume-section').each(function (j) {
+
+            if ($(this).position().top <= dist + 250) {
+
+                $('.nav a.active')
+                    .removeClass('active');
+
+                $('.nav a').eq(j)
+                    .addClass('active');
+            }
+        });
+    }).scroll();
+
+    function openMenu() {
+        document.getElementById('menu').style.display = 'block'
+
+        document.getElementById('bar1').style.display = 'none'
+
+        document.getElementById('bar2').style.display = 'block'
+    }
+
+    function closeMenu() {
+        document.getElementById('menu').style.display = 'none'
+
+        document.getElementById('bar2').style.display = 'none'
+
+        document.getElementById('bar1').style.display = 'block'
+    }
+</script>
