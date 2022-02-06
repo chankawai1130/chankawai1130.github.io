@@ -31,10 +31,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
-
-    <style type="text/css">
-
-    </style>
 </head>
 
 <body>
@@ -86,7 +82,6 @@
                         </div>
                     </nav>
                 </div>
-
             </section>
         </div>
     </header>
@@ -381,6 +376,43 @@
             </div>
         </section>
 
+        <section id="projectDesc" class="section-paddingTop page-section">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="embed-responsive embed-responsive-16by9 z-depth-1">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/RhoUSKiN-c8"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h3 class="small" style="font-family: Ubuntu-Bold,sans-serif;">University Student Admission
+                            System</h3>
+                        <p class="project-description">University Student Admission System is a web application
+                            through
+                            which students can submit applications to the university, and administrators and
+                            professors
+                            can
+                            make further process for the submitted applications.
+                        </p>
+                        <h5>Technologies used</h5>
+                        <ul class="technologies">
+                            <li><span>Programming language(s): &nbsp;</span>JavaScript</li>
+                            <li><span>Framework: &nbsp;</span>Sails.js</li>
+                            <li><span>Database: &nbsp;</span>MongoDB</li>
+                            <li><span>Others: &nbsp;</span>Mailgun</li>
+                        </ul>
+                        <h5>Time to develop</h5>
+                        <ul>
+                            <li>3.5 months</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer fragment="1264c969046" id="footer" class="site-footer">
@@ -398,7 +430,44 @@
 
 </html>
 
+
+
 <script>
+    $(function () {
+        var naviBtns =
+            $("#verticalNav .nav .nav-link");
+
+        for (var i = 0; i < naviBtns.length; i++) {
+            naviBtns[i].addEventListener("click",
+                function () {
+                    var current = document
+                        .getElementsByClassName("active");
+
+                    current[0].className = current[0]
+                        .className.replace(" active", "");
+
+                    this.className += " active";
+                });
+        }
+
+        /* Code for changing active 
+        link on Scrolling */
+        $(window).scroll(function () {
+            var dist = $(window).scrollTop();
+            $('.resume-section').each(function (j) {
+
+                if ($(this).position().top <= dist + 250) {
+
+                    $('.nav a.active')
+                        .removeClass('active');
+
+                    $('.nav a').eq(j)
+                        .addClass('active');
+                }
+            });
+        }).scroll();
+    });
+
     document.addEventListener("DOMContentLoaded", function () {
         window.addEventListener('scroll', function () {
             if (window.scrollY > 50) {
@@ -445,42 +514,6 @@
                     .removeClass('active');
 
                 $('.navbar-nav a').eq(i)
-                    .addClass('active');
-            }
-        });
-    }).scroll();
-</script>
-
-
-<script>
-    var naviBtns =
-        $("#verticalNav .nav .nav-link");
-
-    for (var i = 0; i < naviBtns.length; i++) {
-        naviBtns[i].addEventListener("click",
-            function () {
-                var current = document
-                    .getElementsByClassName("active");
-
-                current[0].className = current[0]
-                    .className.replace(" active", "");
-
-                this.className += " active";
-            });
-    }
-
-    /* Code for changing active 
-    link on Scrolling */
-    $(window).scroll(function () {
-        var dist = $(window).scrollTop();
-        $('.resume-section').each(function (j) {
-
-            if ($(this).position().top <= dist + 250) {
-
-                $('.nav a.active')
-                    .removeClass('active');
-
-                $('.nav a').eq(j)
                     .addClass('active');
             }
         });
