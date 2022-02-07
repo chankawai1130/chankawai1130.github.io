@@ -148,10 +148,16 @@ section {
     font-family: Ubuntu-Bold, sans-serif;
     color: #fbfbfb;
     position: absolute;
-    right: -80px;
+    right: -500px;
     bottom: 0px;
     z-index: -1;
     font-size: 27.25rem;
+}
+
+@media screen and (max-width: 900px) {
+    .title .title-clone {
+        right: 0px;
+    } 
 }
 
 #portrait {
