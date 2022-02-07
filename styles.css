@@ -28,6 +28,12 @@ h1 {
     line-height: 1.15;
 }
 
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 85px; 
+    } 
+}
+
 h2 {
     display: block;
     font-size: 2.4em;
