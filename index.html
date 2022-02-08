@@ -147,8 +147,7 @@
             <div class="container">
                 <h2>My <span class="highlight">Resume</span></h2>
                 <div class="row">
-                    <!-- <div class="col-lg-3"> -->
-                    <div id="verticalNav" class="d-none d-lg-block"
+                     <div class="col-lg-3" class="d-none d-lg-block">
                         style="height: 134.82px; width: 92.51px; margin-right: 170px; margin-left: 20px;">
                         <nav id="navi" class="nav flex-column">
                             <ul class="nav flex-column">
@@ -164,10 +163,9 @@
                             </ul>
                         </nav>
                     </div>
-                    <!-- </div> -->
+                  </div>
 
-                    <!-- <div class="col-lg-9 col-md-12"> -->
-                    <div style="width:825px; margin-left: 15px; margin-right: 15px;">
+                    <div class="col-lg-9 col-md-12">
                         <div id="page-1" class="page one resume-section">
                             <h3 class="heading">Education</h3>
                             <div class="resume-wrap transition d-flex">
@@ -301,7 +299,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- </div> -->
+                  </div>
 
                 </div>
             </div>
@@ -414,13 +412,13 @@
                 });
         }
 
-        /* Code for changing active 
-        link on Scrolling */
+       /* Code for changing active 
+        link on Scrolling - Resume section side bar*/
         $(window).scroll(function () {
             var dist = $(window).scrollTop();
             $('.resume-section').each(function (j) {
 
-                if ($(this).position().top <= dist + 250) {
+                 if ($(this)[0].getBoundingClientRect().top + $(window)['scrollTop']() <= dist + 250) {
 
                     $('.nav a.active')
                         .removeClass('active');
@@ -448,7 +446,7 @@
     });
 
     /* Code for changing active 
-    link on clicking */
+       link on clicking - Top navigation bar*/
     var btns =
         $(".topNav .navbar-nav .nav-link");
 
@@ -466,7 +464,7 @@
     }
 
     /* Code for changing active 
-    link on Scrolling */
+    link on Scrolling - Top navigation bar */
     $(window).scroll(function () {
         var distance = $(window).scrollTop();
         $('.page-section').each(function (i) {
