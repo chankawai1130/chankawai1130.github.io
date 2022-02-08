@@ -77,7 +77,6 @@ h6 {
     position: relative;
     padding-left: .63rem;
     padding-right: .63rem;
-    z-index: 1;
 }
 
 .highlight::before {
@@ -235,6 +234,18 @@ section {
 }
 
 #verticalNav {
+    top: 180px;
+    position: -webkit-sticky;
+    position: sticky;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.625em;
+}
+
+#navi {
     top: 180px;
     position: -webkit-sticky;
     position: sticky;
