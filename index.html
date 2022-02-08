@@ -392,13 +392,13 @@
 
 
 <script>
-    $(function () {
+    $(function() {
         var naviBtns =
             $("#verticalNav .nav .nav-link");
 
         for (var i = 0; i < naviBtns.length; i++) {
             naviBtns[i].addEventListener("click",
-                function () {
+                function() {
                     var current = document
                         .getElementsByClassName("active");
 
@@ -409,13 +409,13 @@
                 });
         }
 
-       /* Code for changing active 
+        /* Code for changing active 
         link on Scrolling - Resume section side bar*/
-        $(window).scroll(function () {
+        $(window).scroll(function() {
             var dist = $(window).scrollTop();
-            $('.resume-section').each(function (j) {
+            $('.resume-section').each(function(j) {
 
-                 if ($(this)[0].getBoundingClientRect().top + $(window)['scrollTop']() <= dist + 250) {
+                if ($(this)[0].getBoundingClientRect().top + $(window)['scrollTop']() <= dist + 250) {
 
                     $('.nav a.active')
                         .removeClass('active');
@@ -424,11 +424,47 @@
                         .addClass('active');
                 }
             });
+        });
+
+        /* Code for changing active 
+    link on Scrolling - Top navigation bar*/
+        $(window).scroll(function() {
+            var distance = $(window).scrollTop();
+            $('.page-section').each(function(i) {
+
+                if ($(this).position().top <=
+                    distance + 250) {
+
+                    $('.navbar-nav a.active')
+                        .removeClass('active');
+
+                    $('.navbar-nav a').eq(i)
+                        .addClass('active');
+                }
+            });
         }).scroll();
+
+        /* Code for changing active 
+    link on clicking - Top navigation bar*/
+        var btns =
+            $(".topNav .navbar-nav .nav-link");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click",
+                function() {
+                    var current = document
+                        .getElementsByClassName("active");
+
+                    current[0].className = current[0]
+                        .className.replace(" active", "");
+
+                    this.className += " active";
+                });
+        }
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
-        window.addEventListener('scroll', function () {
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener('scroll', function() {
             if (window.scrollY > 50) {
                 document.getElementById('navbar_top').classList.add('fixed-top');
                 // add padding top to show content behind navbar
@@ -442,42 +478,7 @@
         });
     });
 
-    /* Code for changing active 
-       link on clicking - Top navigation bar*/
-    var btns =
-        $(".topNav .navbar-nav .nav-link");
-
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click",
-            function () {
-                var current = document
-                    .getElementsByClassName("active");
-
-                current[0].className = current[0]
-                    .className.replace(" active", "");
-
-                this.className += " active";
-            });
-    }
-
-    /* Code for changing active 
-    link on Scrolling - Top navigation bar */
-    $(window).scroll(function () {
-        var distance = $(window).scrollTop();
-        $('.page-section').each(function (i) {
-
-            if ($(this).position().top
-                <= distance + 250) {
-
-                $('.navbar-nav a.active')
-                    .removeClass('active');
-
-                $('.navbar-nav a').eq(i)
-                    .addClass('active');
-            }
-        });
-    }).scroll();
-
+    /* Code for collapsing or expanding Top navigation bar*/
     function openMenu() {
         document.getElementById('menu').style.display = 'block'
 
