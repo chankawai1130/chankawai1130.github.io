@@ -2,6 +2,10 @@
     background: #fed9ca;
 }
 
+:focus-visible {
+    outline: none;
+}
+
 body {
     font-family: Lora-Regular, sans-serif;
     font-size: 16px;
@@ -58,7 +62,6 @@ h5 {
 }
 
 h3 {
-    font-family: 'Poppins', sans-serif;
     color: #222222;
     font-weight: 700;
 }
