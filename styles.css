@@ -824,7 +824,13 @@ ul li {
     font-weight: 700;
 }
 
-
+h3.small {
+    font-size: 1.8em;
+    margin-bottom: 1.49rem;
+    line-height: 1.21;
+    font-weight: bold;
+    display: block;
+}
 /* #endregion */
 
 
