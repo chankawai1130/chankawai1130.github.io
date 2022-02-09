@@ -22,6 +22,12 @@ body {
     letter-spacing: 4px;
 }
 
+h1,
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #222222;
+}
+
 h1 {
     font-size: 100px;
     font-weight: 800;
@@ -30,8 +36,8 @@ h1 {
 
 @media screen and (max-width: 900px) {
     h1 {
-        font-size: 85px; 
-    } 
+        font-size: 85px;
+    }
 }
 
 h2 {
@@ -63,12 +69,6 @@ h3 {
     font-weight: 700;
 }
 
-h1,
-h2 {
-    font-family: 'Ubuntu', sans-serif;
-    color: #222222;
-}
-
 .p-large {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
@@ -89,6 +89,7 @@ h2 {
     position: relative;
     padding-left: .63rem;
     padding-right: .63rem;
+    z-index: 1;
 }
 
 .highlight::before {
@@ -143,7 +144,7 @@ section {
 }
 
 #about {
-    margin-top: 12rem;
+    margin-top: 7rem;
     padding-bottom: 7em;
 }
 
@@ -155,20 +156,18 @@ section {
     padding-bottom: 54px;
 }
 
+#projectDesc {
+    margin-top: 2.8rem;
+}
+
 .title .title-clone {
     font-family: 'Ubuntu', sans-serif;
     color: #fbfbfb;
     position: absolute;
-    right: -500px;
+    right: -80px;
     bottom: 0px;
     z-index: -1;
     font-size: 27.25rem;
-}
-
-@media screen and (max-width: 900px) {
-    .title .title-clone {
-        right: 0px;
-    } 
 }
 
 #portrait {
@@ -231,7 +230,9 @@ section {
     position: relative;
 }
 
+
 /*a bullet*/
+
 #navi li a.active::after {
     position: absolute;
     top: 50%;
@@ -243,18 +244,6 @@ section {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     background: #e4ccc0;
-}
-
-#verticalNav {
-    top: 180px;
-    position: -webkit-sticky;
-    position: sticky;
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    color: #777777;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.625em;
 }
 
 #navi {
@@ -551,7 +540,6 @@ html {
     box-sizing: border-box;
 }
 
-
 #cv-download-btn {
     background: #e6c4BB;
     border-color: #e6c4BB;
@@ -564,8 +552,6 @@ html {
     transition: all 0.5s;
     border-radius: 30px;
     padding: 13px 43px;
-
-
     display: inline-block;
     /* padding: 1em 2em; */
     border: none;
@@ -573,7 +559,6 @@ html {
     color: white;
     background: red;
     /* default color */
-
     /* "to left" / "to right" - affects initial color */
     background: linear-gradient(to left, #e6c4BB 50%, #888888 50%) right;
     background-size: 200%;
@@ -716,7 +701,6 @@ footer {
 }
 
 .no-space {
-
     line-height: 0;
 }
 
@@ -773,7 +757,7 @@ li {
 }
 
 ul li {
-    font-family: Lora-Regular,sans-serif;
+    font-family: Lora-Regular, sans-serif;
     line-height: 1.23;
     margin-bottom: 1.39rem;
 }
