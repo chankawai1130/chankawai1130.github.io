@@ -153,20 +153,20 @@ section {
 
 .section-paddingTop {
     display: block;
-    padding-top: 54px;
+    padding-top: 90px;
 }
 
 #about {
     margin-top: 12rem;
-    padding-bottom: 7em;
 }
 
-#resume {
-    padding-bottom: 7em;
+#resume,
+#about {
+    padding-bottom: 90px !important;
 }
 
-#project {
-    padding-bottom: 54px;
+#projects {
+    padding-bottom: 112px !important;
 }
 
 .title .title-clone {
