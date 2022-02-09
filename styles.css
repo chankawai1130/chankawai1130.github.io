@@ -1007,7 +1007,7 @@ nav.menu-primary ul li.menu-item-has-children span.icon-c:hover {
 }
 
 @media (max-width: 575px) {
-    #project .row>[class*=col-] {
+    #projects .row>[class*=col-] {
         padding-bottom: 1.25rem;
     }
 }
