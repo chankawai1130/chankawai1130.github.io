@@ -6,6 +6,17 @@
     outline: none;
 }
 
+.btn-light.focus,
+.btn-light:focus {
+    box-shadow: none !important;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
 body {
     font-family: Lora-Regular, sans-serif;
     font-size: 16px;
