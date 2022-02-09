@@ -365,7 +365,7 @@ html {
 }
 
 .site-header {
-    margin-bottom: 55px !important
+    margin-bottom: 55px;
 }
 
 #navbar_top {
@@ -831,6 +831,13 @@ h3.small {
     font-weight: bold;
     display: block;
 }
+
+@media (max-width: 575px) {
+    .site-header.project-page {
+        margin-bottom: 0px !important;
+    }
+}
+
 /* #endregion */
 
 
