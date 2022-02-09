@@ -57,9 +57,14 @@ h5 {
     font-weight: bold;
 }
 
-h1,
-h2,
 h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    font-weight: 700;
+}
+
+h1,
+h2 {
     font-family: 'Ubuntu', sans-serif;
     color: #222222;
 }
