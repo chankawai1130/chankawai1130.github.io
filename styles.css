@@ -89,7 +89,11 @@ h2 {
     color: #222222;
 }
 
-/* #region - Header */
+.position-relative {
+    position: relative !important;
+}
+
+/* #region - Scroll button */
 .p-left-scroll {
     margin-left: 17.5%;
     margin-bottom: -0.1rem;
@@ -103,7 +107,7 @@ h2 {
 
 .btn-vertical p {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -116,7 +120,7 @@ h2 {
     text-decoration: none;
 }
 
-.fa-long-arrow-alt-down {
+.fa-long-arrow-down {
     font-size: .63rem;
     margin-left: 0.63rem;
     color: #2b2b2b
@@ -212,8 +216,8 @@ section {
     height: auto;
 }
 
-#home {
-    margin-bottom: 100px;
+#about {
+    margin-top: 8.13rem;
 }
 
 #resume,
@@ -353,10 +357,6 @@ html {
 
 .fa-bars {
     color: #929191;
-}
-
-.position-relative {
-    position: relative !important;
 }
 
 .bar-Icon {
