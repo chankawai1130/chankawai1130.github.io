@@ -6,6 +6,18 @@
     outline: none;
 }
 
+.dot {
+    color: #fed9ca;
+}
+
+.bg-fixed {
+    background-attachment: fixed;
+}
+
+.bg-line {
+    background-image: url(bg-line.svg);
+}
+
 .btn-light.focus {
     box-shadow: none !important;
 }
@@ -233,10 +245,11 @@ section {
     font-family: 'Ubuntu', sans-serif;
     color: #fbfbfb;
     position: absolute;
-    right: -500px;
+    right: -150px;
     bottom: 0px;
     z-index: -1;
     font-size: 27.25rem;
+    font-weight: 700;
 }
 
 @media screen and (max-width: 900px) {
@@ -313,13 +326,13 @@ html {
 }
 
 #navbar_top {
-    background-color: #f7f7f7;
+    background-color: #fbfbfb;
 }
 
 #navbarTogglerDemo03 .nav-item {
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    font-size: .81rem;
+    font-size: 13px;
     padding: 0.05rem 0.5rem;
     line-height: 1.23;
 }
@@ -783,11 +796,6 @@ h3.small {
     height: 100%;
 }
 
-.card-post {
-    background-color: #fff;
-    border: 0;
-}
-
 .card {
     position: relative;
     display: -ms-flexbox;
@@ -799,6 +807,11 @@ h3.small {
     background-color: transparent;
     background-clip: border-box;
     border-radius: 0;
+}
+
+.card-post {
+    background-color: #fff;
+    border: 0;
 }
 
 .card-post .img,
@@ -958,7 +971,15 @@ nav.menu-primary ul li.menu-item-has-children span.icon-c:hover {
 .card-title p {
     color: #555;
     font-size: 16px;
+    margin-bottom: 0px !important
 }
 
+.card-title {
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
+}
 
+.card-border {
+    opacity: 0.9;
+}
 /* #endregion */
