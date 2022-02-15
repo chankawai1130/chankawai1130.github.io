@@ -10,6 +10,22 @@
     color: #fed9ca;
 }
 
+.bg-half-ring-top:before {
+    top: -50px;
+}
+
+.bg-half-ring-right:before {
+    content: "";
+    background-image: url(bg-half-ring-right.svg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 474px;
+    height: 952px;
+}
+
 .bg-fixed {
     background-attachment: fixed;
 }
@@ -138,12 +154,15 @@ h2 {
     color: #2b2b2b
 }
 /* #endregion */
+.subheading {
+    font-family: 'Lora', serif;
+}
 
 .p-large {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
-    font-family: Lora-Regular, sans-serif;
+    font-family: 'Lora', serif;
     font-weight: 400;
     color: #747474;
     text-align: left;
