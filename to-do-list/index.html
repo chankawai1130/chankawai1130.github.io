@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html id="top">
+
+<head>
+    <title>Yvonne Chan - Personal Profile</title>
+
+    <!-- Viewport mobile tag for sensible mobile support -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+
+    <!-- External style sheet -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <!-- Carousel -->
+
+
+    <style type="text/css">
+    </style>
+</head>
+
+<body class="bg-fixed bg-line">
+    <header id="header" class="site-header project-page">
+        <div class="main-menu" style="margin-top: 8px;">
+            <!-- Navigation bar for extra large -->
+            <div id="topNav" class="d-none d-lg-block">
+                <nav id="navbar_top" style="width: 100%;" class="navbar navbar-expand-lg navbar-light">
+                    <div class="container">
+                        <div class="navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io/#home"> Home
+                                    </a></li>
+                                <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io/#about"> About
+                                    </a></li>
+                                <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io/#resume"> Resume
+                                    </a></li>
+                                <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io/#projects">
+                                        Projects </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- Navigation bar for Large -->
+            <div id="topNav" class="d-block d-lg-none">
+                <div id="navbar-container">
+                    <div class="bar-Icon">
+                        <div id="bar1" class="text-right">
+                            <button id="barBtn1" onclick="openMenu()"><i class="fa fa-bars"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                        <div id="bar2" class="text-right">
+                            <button id="barBtn2" onclick="closeMenu()"><i class="fa fa-bars"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+
+                    <nav id="menu" class="navbar navbar-expand-lg navbar-light">
+                        <div class="container">
+                            <div class="navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                    <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io#home"> Home
+                                        </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io#about">
+                                            About </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io#resume">
+                                            Resume </a></li>
+                                    <li class="nav-item"><a class="nav-link" href="/chankawai1130.github.io#projects">
+                                            Projects </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+    </main>
+
+    <footer id="footer" class="site-footer">
+        <div class="wrapper no-space">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 align-self-center">
+                    <div class="copyright">
+                        <p>© 2021 Personal Portfolio of <a href="/chankawai1130.github.io">Yvonne Chan</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function openMenu() {
+        document.getElementById('menu').style.display = 'block'
+
+        document.getElementById('bar1').style.display = 'none'
+
+        document.getElementById('bar2').style.display = 'block'
+    }
+
+    function closeMenu() {
+        document.getElementById('menu').style.display = 'none'
+
+        document.getElementById('bar2').style.display = 'none'
+
+        document.getElementById('bar1').style.display = 'block'
+    }
+</script>

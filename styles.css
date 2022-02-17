@@ -16,7 +16,7 @@
 
 .bg-half-ring-right:before {
     content: "";
-    background-image: url(bg-half-ring-right.svg);
+    background-image: url(./assets/bg-half-ring-right.svg);
     background-repeat: no-repeat;
     background-position: 100%;
     position: absolute;
@@ -31,7 +31,7 @@
 }
 
 .bg-line {
-    background-image: url(bg-line.svg);
+    background-image: url(./assets/bg-line.svg);
 }
 
 .btn-light.focus {
@@ -720,7 +720,7 @@ html {
 /* #region - Footer */
 
 footer {
-    background-color: #fff;
+    background-color: transparent;
     display: block;
 }
 
@@ -798,6 +798,11 @@ h3.small {
     line-height: 1.21;
     font-weight: bold;
     display: block;
+        font-family: 'Ubuntu', sans-serif;
+}
+
+#projectDesc h5 {
+    font-family: 'Ubuntu', sans-serif;
 }
 
 @media (max-width: 575px) {
@@ -987,13 +992,13 @@ nav.menu-primary ul li.menu-item-has-children span.icon-c:hover {
     }
 }
 
-.card-title p {
+.card-post .card-title p {
     color: #555;
     font-size: 16px;
     margin-bottom: 0px !important
 }
 
-.card-title {
+.card-post .card-title {
     margin-top: 25px !important;
     margin-bottom: 25px !important;
 }
