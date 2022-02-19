@@ -155,14 +155,18 @@ h2 {
 }
 /* #endregion */
 .subheading {
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', serif;
+}
+
+#myName {
+    font-family: 'Poppins', sans-serif;
 }
 
 .p-large {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', serif;
     font-weight: 400;
     color: #747474;
     text-align: left;
@@ -345,7 +349,7 @@ html {
 }
 
 #navbar_top {
-    background-color: #fbfbfb;
+    background-color: #fff;
 }
 
 #navbarTogglerDemo03 .nav-item {
@@ -807,7 +811,7 @@ h3.small {
 
 @media (max-width: 575px) {
     .site-header.project-page {
-        margin-bottom: 0px !important;
+        margin-bottom: 30px !important;
     }
 }
 

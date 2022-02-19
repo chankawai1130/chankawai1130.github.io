@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?&family=Roboto:wght@400;700&family=Lora&family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
         rel="stylesheet">
 
     <!-- jQuery-->
@@ -99,7 +99,7 @@
                     <div class="col-xl-10 col-lg-9 col-md-12" style="margin-bottom: 125px; margin-left: 15px;">
                         <span class="subheading">Hey! I am</span>
                         <div class="title">
-                            <h1>Yvonne Chan<span class="dot">.</span></h1>
+                            <h1 id="myName">Yvonne Chan<span class="dot">.</span></h1>
                             <div class="title-clone">Yvonne</div>
                         </div>
                         <p class="p-large">I’m a IT developer and here is my portfolio. Have a
@@ -610,6 +610,15 @@
                 document.getElementById('navbar_top').classList.remove('fixed-top');
                 // remove padding top from body
                 document.body.style.paddingTop = '0';
+            }
+
+            // Add box shadow
+            var top = document.getElementById("about").getBoundingClientRect().top;
+            var marginTop = parseInt($('#about').css("marginTop").replace('px', ''))
+            if (window.scrollY > top + marginTop) {
+                $('#navbar_top').css({ "box-shadow": "0 10px 15px rgb(25 25 25 / 10%)" })
+            } else {
+                $('#navbar_top').css({ "box-shadow": "none" })
             }
         });
     });
